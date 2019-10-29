@@ -29,24 +29,13 @@ REST(ish) APIs:
 |/findChannel?id=123|GET /channels/123|
 --------------------------------------------------------------------------------------------------------------------------------
 https://www.restapitutorial.com/lessons/httpmethods.html
-## == Should be `idempotent` ==
+## == Should be `idempotent*` ==
  - GET : READ [used to **read** (or retrieve) a representation of a resource]
  - PUT : UPDATE/REPLACE [**update** capabilities]
  - DELETE : Delete [to **delete** a resource identified by a URI]
 
-## == Isn't `idempotent` ==
+## == Isn't `idempotent*` ==
  - POST : CREATE [to **create** new resources]
 --------------------------------------------------------------------------------------------------------------------------------
-@idempotent: same command executed multiple times, the state of resource on the server is exactly
-the same, much like pure functions.
-================================================================================================================================
-[] 1. 
-[] 2. 
-[] 3. 
-[] 4. 
-[] 5. 
-[] 6. 
-[] 7. 
-[] 8. 
-[] 9. 
-[] 10. 
+<sub>* idempotent: same command executed multiple times, the state of resource on the server is exactly
+the same, much like pure functions.</sub>
